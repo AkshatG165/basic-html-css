@@ -1,0 +1,266 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    /*min-width: 450px;*/
+}
+
+.button{
+    background-color: orangered;
+    color: #fff;
+    padding:10px 15px;
+    border:none;
+}
+
+/*Container*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Header*/
+header{
+    background-color: #35424a;
+    color: white;
+    border-bottom: 3px solid orangered;
+    min-height: 100px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: orangered;
+    font-weight: bold;
+}
+
+header .branding{
+    float: left;
+    padding-top: 5px;
+}
+
+header .branding span{
+    color: orangered;
+}
+
+#navbar{
+    float: right;
+    padding-top: 5px;
+}
+
+#navbar ul{
+    padding: 0;
+    margin-top: 35px;
+    list-style: none;
+} 
+
+#navbar li{
+    display: inline;
+    padding: 0 15px 0 15px;
+}
+
+#showcase{
+    background-image: url("../images/bgimage2.jpg");
+    background-position: left bottom;
+    min-height: 400px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#showcase h1{
+    font-size: 55px;
+    padding-top: 20px;
+}
+
+#newsletter{
+    background-color: #35424a;
+    color: white;
+    min-height: 100px;
+}
+
+#newsletter h1{
+    float: left;
+    padding-top: 10px;
+}
+
+#newsletter form{
+    float: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#newsletter input{
+    height: 30px;
+    width: 280px;
+}
+
+#boxes{
+    padding-top: 30px;
+}
+
+#boxes .box{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+footer{
+    background-color: orangered;
+    text-align: center;
+    color: white;
+    padding: 20px 0 20px 0;
+}
+
+/*About*/
+.about{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.about .aboutus h1{
+    margin: 0;
+}
+
+.about .aboutus{
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 0 40px 0 0;
+}
+
+.about .sidebar{
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid #35424a;
+    background-color: #35424a;
+    color: white;
+    padding: 20px;
+    /*min-width: 300px;*/
+}
+
+.about .aboutus .para{
+    border: 1px solid #35424a;
+    background-color: #35424a;
+    color: white;
+    padding: 20px;
+}
+
+/*Services*/
+.services{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.services .service-boxes h1{
+    margin-top: 0;
+}
+
+.services .service-boxes{
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 0 40px 0 0;
+}
+
+.services .sidebar{
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid #35424a;
+    background-color: #35424a;
+    color: white;
+    padding: 20px;
+    /*min-width: 300px;*/
+}
+
+.services .service-boxes .box{
+    border: 1px solid darkgrey;
+    background-color: lightgrey;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.quote-form input{
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.quote-form textarea{
+    display: block;
+    width: 100%;
+}
+
+.quote-form .form-group{
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+/*Media Queries for responsive design*/
+@media(max-width: 750px) {
+    header .branding{
+        float: none;
+        text-align: center;
+    }
+    #navbar{
+        float: none;
+        text-align: center;
+    }
+    #navbar ul{
+        margin-top: 0;
+    }
+    #boxes .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 950px) {
+    #newsletter h1{
+        float: none;
+        text-align: center;
+    }
+    #newsletter form{
+        float: none;
+        text-align: center;
+    }
+    #newsletter .subscribe-form{
+        padding-top: 0;
+    }
+    .about .aboutus{
+        float: none;
+        width: 100%;
+        padding: 0
+    }
+    .about .sidebar{
+        float: none;
+        width: 100%;
+    }
+    .services .service-boxes{
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .services .sidebar{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px) {
+    #newsletter input{
+        height: 30px;
+        width: 100%
+    }
+    .button{
+        width: 100%;
+    }
+}
