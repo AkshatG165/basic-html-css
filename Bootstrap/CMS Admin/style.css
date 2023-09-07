@@ -6,6 +6,10 @@
     background-color: #BDB9B2;
 }
 
+input[type=checkbox]{
+    accent-color: #BDB9B2;
+}
+
 .navbar{
     background-color: #BDB9B2;
     color: black;
